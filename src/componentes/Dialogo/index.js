@@ -5,6 +5,8 @@ export default function Dialogo() {
  return (
    <View>
        <Text>Aqui ficará o menu dos Dialogo</Text>
+       <Text> Responsavel Cassio</Text>
+      
    </View>
   );
 }

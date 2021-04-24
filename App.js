@@ -1,27 +1,38 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Vocabulario from './src/componentes/Vocabulario';
-import Historias from './src/componentes/Historias';
-import Dialogo from './src/componentes/Dialogo';
+import { createStackNavigator } from '@react-navigation/stack';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Vocabulario from './src/componentes/Vocabulario';
+import Dialogo from './src/componentes/Dialogo';
 
-const Abas=createBottomTabNavigator();
+//paginas
+import Historias from './src/componentes/Historias';
+import TextSelected from './src/componentes/Historias/TextSelected';
+import Questions from './src/componentes/Historias/Questions';
 
+const Abas  = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
+const icons = {
+ Vocabulario: {
+   name: 'comment'
+ },
+ Dialogo:{
+   name: 'comments'
+ },
+ Historias:{
+   name: 'book'
+ }
+};
 
-export default function App(){
+function Tabs(){
   return(
-    <NavigationContainer>
       <Abas.Navigator
-        screenOptions={ ({route}) => ({
-          tabBarIcon: ({focused, color, size}) => {
-            let iconName;
-            if(route.name === 'Vocabulario')    iconName = 'comment'
-            else if (route.name === 'Dialogos')  iconName = 'comments'
-            else if(route.name === 'Histórias') iconName = 'book';
-            return <FontAwesome name={iconName} size={size} color={color} />;
+        screenOptions = {({route}) => ({
+          tabBarIcon: ({color, size}) => {
+            const { name } = icons[route.name];
+            return <FontAwesome name={name} color={color} size={size} />
           }
         }) }
         tabBarOptions={{
@@ -31,10 +42,22 @@ export default function App(){
           activeTintColor: '#fff'
         }}
       >
-        <Abas.Screen name="Vocabulario" component={Vocabulario} />
-        <Abas.Screen name="Dialogos" component={Dialogo} />
-        <Abas.Screen name="Histórias" component={Historias} />
+      <Abas.Screen name="Vocabulario" component={Vocabulario} />
+      <Abas.Screen name="Dialogo" component={Dialogo} />
+      <Abas.Screen name="Historias" component={Historias} />
       </Abas.Navigator>
-    </NavigationContainer> 
   );
 }
+
+export default function App(){
+  return(
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Vocabulario" component={Tabs} options={{ headerShown: false }} />
+        <Stack.Screen name="TextSelected" component={TextSelected} />
+        <Stack.Screen name="Questions" component={Questions} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+

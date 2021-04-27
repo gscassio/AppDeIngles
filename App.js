@@ -10,6 +10,7 @@ import Dialogo from './src/componentes/Dialogo';
 import Historias from './src/componentes/Historias';
 import TextSelected from './src/componentes/Historias/TextSelected';
 import Questions from './src/componentes/Historias/Questions';
+import talkSelect from './src/componentes/Vocabulario/talkSelect';
 
 const Abas  = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -56,6 +57,8 @@ export default function App(){
         <Stack.Screen name="Vocabulario" component={Tabs} options={{ headerShown: false }} />
         <Stack.Screen name="TextSelected" component={TextSelected} />
         <Stack.Screen name="Questions" component={Questions} />
+        <Stack.Screen name="talkSelect" component={talkSelect} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

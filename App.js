@@ -55,8 +55,8 @@ export default function App(){
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Vocabulario" component={Tabs} options={{ headerShown: false }} />
-        <Stack.Screen name="TextSelected" component={TextSelected} />
-        <Stack.Screen name="Questions" component={Questions} />
+        <Stack.Screen name="TextSelected" component={TextSelected} options={{title:'' }} />
+        <Stack.Screen name="Questions" component={Questions} options={{title:''}} />
         <Stack.Screen name="talkSelect" component={talkSelect} />
 
       </Stack.Navigator>

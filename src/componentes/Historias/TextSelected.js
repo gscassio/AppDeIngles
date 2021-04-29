@@ -13,14 +13,9 @@ export default function TextSelected({ route, navigation }) {
 
   useEffect(() => {
      async function getNome() {
-<<<<<<< HEAD
-       await firebase.database().ref('nome').on('value', (snapshot) =>{
-         setNome(snapshot.val())
-=======
        await firebase.database().ref('historias').child(route.params.historia_id).once('value', (snapshot) =>{
          setTitulo(snapshot.val().titulo)
          setConteudo(snapshot.val().conteudo)
->>>>>>> e737a04ddd77aae8793f7614afcf472281ec7230
        });
        setLoading(false);
      }

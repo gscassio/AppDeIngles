@@ -10,7 +10,7 @@ import Dialogo from './src/componentes/Dialogo';
 import Historias from './src/componentes/Historias';
 import TextSelected from './src/componentes/Historias/TextSelected';
 import Questions from './src/componentes/Historias/Questions';
-import talkSelect from './src/componentes/Vocabulario/talkSelect';
+import talkSelect from './src/componentes/Dialogo/talkSelect';
 
 const Abas  = createBottomTabNavigator();
 const Stack = createStackNavigator();

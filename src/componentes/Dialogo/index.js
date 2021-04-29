@@ -17,7 +17,7 @@ export default function Vocabulario({navigation}) {
          
         <Image 
           style={StyleDia.img}
-          source={require('../../images/ImgVocabulario/comida.png')}
+          source={require('../../images/ImgDialogo/comida.png')}
         />
         <Text style={StyleDia.textoBotao}>Do you want something to drink</Text>
       </TouchableOpacity>
@@ -25,7 +25,7 @@ export default function Vocabulario({navigation}) {
         navigation.navigate('talkSelect', {talk_id: 2}) }>
         <Image 
           style={StyleDia.img}
-          source={require('../../images/ImgVocabulario/clock.png')}
+          source={require('../../images/ImgDialogo/clock.png')}
         />
         <Text style={StyleDia.textoBotao}>Now or Later</Text>
       </TouchableOpacity>
@@ -33,7 +33,7 @@ export default function Vocabulario({navigation}) {
         navigation.navigate('talkSelect', {talk_id: 3}) }>
         <Image 
           style={StyleDia.img}
-          source={require('../../images/ImgVocabulario/nature2.png')}
+          source={require('../../images/ImgDialogo/nature2.png')}
         />
         <Text style={StyleDia.textoBotao}>Where are you?</Text>
       </TouchableOpacity>
@@ -41,7 +41,7 @@ export default function Vocabulario({navigation}) {
         navigation.navigate('talkSelect', {talk_id: 4}) }>
         <Image 
           style={StyleDia.img}
-          source={require('../../images/ImgVocabulario/ifood.png')}
+          source={require('../../images/ImgDialogo/ifood.png')}
         />
         <Text style={StyleDia.textoBotao}>I’m hungry</Text>
       </TouchableOpacity>

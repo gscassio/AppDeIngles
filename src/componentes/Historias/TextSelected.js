@@ -8,7 +8,7 @@ export default function TextSelected({ route, navigation }) {
   const [nome, setNome] = useState('carregando...')
   useEffect(() => {
      async function getNome() {
-       await firebase.database().ref('nome').once('value', (snapshot) =>{
+       await firebase.database().ref('nome').on('value', (snapshot) =>{
          setNome(snapshot.val())
        });
      }

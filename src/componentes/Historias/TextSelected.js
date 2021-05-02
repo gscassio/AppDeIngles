@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { View, Text, ScrollView, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, ActivityIndicator, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import firebase from '../../firebaseConnection';
 import Styles from '../../styles';
@@ -37,7 +37,11 @@ export default function TextSelected({ route, navigation }) {
       </View>  
       <View style={StylesH.viwBtn}>
         <TouchableOpacity style={StylesH.btnQuestions} onPress={() => navigation.navigate('Questions')}>
-          <Text style={StylesH.txtbtnQuestions}>Comprehension</Text>
+          <Text style={StylesH.txtbtnQuestions}>Exercises</Text>
+          <Image 
+          style={[StylesH.imgBtnText]}
+          source={require('../../images/ImgHistorias/test.png')}
+        />
         </TouchableOpacity>
         </View>
     </ScrollView>  

@@ -58,12 +58,13 @@ export default StyleSheet.create({
     },
     btnQuestions:{
         backgroundColor: '#47D099',
-        width: 200,
-        height: 55,
+        width: 150,
+        height: 50,
         borderRadius: 10,
         borderColor:'#2AC19C',
         borderWidth: 1,
-        elevation: 5,
+        elevation: 7,
+        flexDirection: 'row',
     },
     viwBtn:{
         flex: 1,
@@ -72,10 +73,18 @@ export default StyleSheet.create({
     },
     txtbtnQuestions:{
         color: '#fff',
-        fontSize: 17,
-        marginTop: 15,
+        fontSize: 22,
+        marginTop: 10,
         marginLeft: 10,
         fontWeight: 'bold'
+    },
+    imgBtnText:{
+        backgroundColor:'#fff',
+        borderRadius:25,
+        width: 25,
+        height: 25,
+        marginLeft: 10,
+        marginTop:15,
     }
 
 

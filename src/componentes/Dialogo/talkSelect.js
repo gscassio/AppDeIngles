@@ -39,52 +39,71 @@ export default function talkSelect({ route, navigation }) {
         {traduzir?
 
         <View >
-        <Text >Você quer algo para beber?</Text>
+        <Text style={TextEstilos.tituloTalk}>Você quer algo para beber?</Text>
         <Text></Text> 
+     
+        <Image style={TextEstilos.img} source={require(Susan)}/>  
+        <View style={TextEstilos.TextoDireita}>                  
+          <Text style={TextEstilos.TextoEsqConteudo}>Susan: David, você gostaria de algo para comer?</Text>        
+        </View> 
+
+        <View style={TextEstilos.ViewOposta}>
+          <Image style={TextEstilos.imgOposta} source={require(David)}/> 
+        </View>
 
         <View style={TextEstilos.TextoEsquerda}> 
-          <Image style={TextEstilos.img} source={require(Susan)}/>        
-          <Text>Susan: David, você gostaria de algo para comer?</Text>
+          <Text style={TextEstilos.TextoEsqConteudo}>David: Não, estou satisfeito.</Text>            
         </View> 
-        <View style={TextEstilos.TextoDireita}> 
-          <Text >David: Não, estou satisfeito.</Text>
-          <Image style={TextEstilos.img} source={require(David)}/>   
-        </View> 
-        <View style={TextEstilos.TextoEsquerda}>
-        <Image style={TextEstilos.img} source={require(Susan)}/>  
-        <Text>Susan: Você quer algo para beber?</Text>     
-        </View>
-        <View style={TextEstilos.TextoDireita}> 
-        <Text>David: Sim, eu gostaria de um café.</Text>  
-        <Image style={TextEstilos.img} source={require(David)}/>    
-        </View>
-        <View style={TextEstilos.TextoEsquerda}>
-        <Text>Susan: Lamento, eu não tenho café.</Text>  
-        <Image style={TextEstilos.img} source={require(Susan)}/>  
-        </View>
-        <View style={TextEstilos.TextoDireita}> 
-        <Text>David: Tudo bem, Eu quero um copo com água</Text> 
-        <Image style={TextEstilos.img} source={require(David)}/>   
-        </View>    
-        <View style={TextEstilos.TextoDireita}> 
-        <Text>Susan: Um copo pequeno ou um grande?</Text> 
         <Image style={TextEstilos.img} source={require(Susan)}/> 
-        </View>    
-        <View style={TextEstilos.TextoEsquerda}>              
-        <Text>David: Pequeno por favor.</Text>   
-        <Image style={TextEstilos.img} source={require(David)}/> 
-        </View>     
+        <View style={TextEstilos.TextoDireita}>         
+          <Text style={TextEstilos.TextoEsqConteudo}>Susan: Você quer algo para beber?</Text>     
+        </View>
+
+        <View style={TextEstilos.ViewOposta}>
+          <Image style={TextEstilos.img} source={require(David)}/>  
+        </View>  
+
+        <View style={TextEstilos.TextoEsquerda}> 
+          <Text style={TextEstilos.TextoEsqConteudo}>David: Sim, eu gostaria de um café.</Text>  
+        </View>
+        <Image style={TextEstilos.img} source={require(Susan)}/>  
+        <View style={TextEstilos.TextoDireita}>
+          <Text style={TextEstilos.TextoEsqConteudo}>Susan: Lamento, eu não tenho café.</Text>  
+        </View>
+
+        <View style={TextEstilos.ViewOposta}>
+          <Image style={TextEstilos.img} source={require(David)}/>
+        </View>
+
+        <View style={TextEstilos.TextoEsquerda}> 
+          <Text  style={TextEstilos.TextoEsqConteudo}>David: Tudo bem, Eu quero um copo com água</Text> 
+        </View>  
+        <Image style={TextEstilos.img} source={require(Susan)}/>   
         <View style={TextEstilos.TextoDireita}> 
-        <Text>Susan: Aqui está</Text>
-        <Image style={TextEstilos.img} source={require(Susan)}/> 
-        </View> 
+          <Text style={TextEstilos.TextoEsqConteudo}>Susan: Um copo pequeno ou um grande?</Text> 
+        </View>   
+        <View style={TextEstilos.ViewOposta}>
+          <Image style={TextEstilos.img} source={require(David)}/> 
+        </View>
+
         <View style={TextEstilos.TextoEsquerda}>              
-        <Text>David: Obrigado</Text>
+        <Text style={TextEstilos.TextoEsqConteudo}>David: Pequeno por favor.</Text>   
+        </View> 
+        <Image style={TextEstilos.img} source={require(Susan)}/> 
+        <View style={TextEstilos.TextoDireita}> 
+        <Text style={TextEstilos.TextoEsqConteudo}>Susan: Aqui está</Text>
+        </View> 
+
+        <View style={TextEstilos.ViewOposta}>
         <Image style={TextEstilos.img} source={require(David)}/> 
-        </View>    
-        <View style={TextEstilos.TextoDireita}>           
-        <Text>Susan: De nada.</Text>
+        </View>
+
+        <View style={TextEstilos.TextoEsquerda}>              
+        <Text style={TextEstilos.TextoEsqConteudo}>David: Obrigado</Text>
+        </View>  
         <Image style={TextEstilos.img} source={require(Susan)}/>
+        <View style={TextEstilos.TextoDireita}>           
+        <Text style={TextEstilos.TextoEsqConteudo}>Susan: De nada.</Text>
         </View> 
        
         </View>

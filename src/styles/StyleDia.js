@@ -43,12 +43,11 @@ export default StyleSheet.create({
 
     TextoDireita:{
         flexWrap:"wrap", 
-
-        backgroundColor: '#EDF2FE',
+        backgroundColor: '#DDA0DD',
         height: 60,
         borderRadius: 15,
-        justifyContent: 'flex-end',
-        width: 300,
+        justifyContent: 'flex-start',
+        width: '100%',
         borderColor:'#2AC19C',
         borderWidth: 1,
         elevation: 5,
@@ -57,11 +56,11 @@ export default StyleSheet.create({
     },
     TextoEsquerda:{
         flexWrap:"wrap",
-        backgroundColor: '#EDF2FE',
+        backgroundColor: '#87CEEB',
         height: 60,
         borderRadius: 15,
-        justifyContent: 'flex-start',
-        width: 300,
+        justifyContent: 'flex-end',
+        width: '100%',
         borderColor:'#2AC19C',
         borderWidth: 1,
         elevation: 5,
@@ -69,5 +68,31 @@ export default StyleSheet.create({
         
       
     },
+    TextoEsqConteudo:{
+        color: '#1D87F8',
+        fontWeight: 'bold',
+        fontSize: 15,
+        paddingLeft: 10,
+        marginTop: 15
+    },
+    tituloTalk: {
+        fontSize: 25,
+        color: '#2AC19C',
+        fontWeight: 'bold',
+        marginTop: 40,
+        alignItems: 'center',
+        justifyContent:'center',
+    },
+    imgOposta: {
+        height: 50,
+        width: 50,
+        marginTop: 5,
+        marginLeft: 10,
+    },
+    ViewOposta:{
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+    }
 
 });

@@ -10,7 +10,10 @@ import Dialogo from './src/componentes/Dialogo';
 import Historias from './src/componentes/Historias';
 import TextSelected from './src/componentes/Historias/TextSelected';
 import Questions from './src/componentes/Historias/Questions';
-import talkSelect from './src/componentes/Dialogo/talkSelect';
+import Dialogues1 from './src/componentes/Dialogo/Dialogues1';
+import Dialogues2 from './src/componentes/Dialogo/Dialogues2';
+import Dialogues3 from './src/componentes/Dialogo/Dialogues3';
+import Dialogues4 from './src/componentes/Dialogo/Dialogues4';
 
 const Abas  = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -57,7 +60,10 @@ export default function App(){
         <Stack.Screen name="Vocabulario" component={Tabs} options={{ headerShown: false }} />
         <Stack.Screen name="TextSelected" component={TextSelected} options={{title:'Short English stories' }} />
         <Stack.Screen name="Questions" component={Questions} options={{title:'Short English stories'}} />
-        <Stack.Screen name="talkSelect" component={talkSelect} />
+        <Stack.Screen name="Dialogues1" component={Dialogues1} />
+        <Stack.Screen name="Dialogues2" component={Dialogues2} />
+        <Stack.Screen name="Dialogues3" component={Dialogues3} />
+        <Stack.Screen name="Dialogues4" component={Dialogues4} />
 
       </Stack.Navigator>
     </NavigationContainer>

@@ -13,7 +13,7 @@ export default function Vocabulario({navigation}) {
      </View>
      <View style={StyleDia.menu}>
       <TouchableOpacity style={StyleDia.botao} onPress={() =>
-        navigation.navigate('talkSelect', {talk_id: 1})}>
+        navigation.navigate('Dialogues1')}>
          
         <Image 
           style={StyleDia.img}
@@ -22,7 +22,7 @@ export default function Vocabulario({navigation}) {
         <Text style={StyleDia.textoBotao}>Do you want something to drink</Text>
       </TouchableOpacity>
       <TouchableOpacity style={StyleDia.botao} onPress={() => 
-        navigation.navigate('talkSelect', {talk_id: 2}) }>
+        navigation.navigate('Dialogues2') }>
         <Image 
           style={StyleDia.img}
           source={require('../../images/ImgDialogo/clock.png')}
@@ -30,7 +30,7 @@ export default function Vocabulario({navigation}) {
         <Text style={StyleDia.textoBotao}>Now or Later</Text>
       </TouchableOpacity>
       <TouchableOpacity style={StyleDia.botao} onPress={() => 
-        navigation.navigate('talkSelect', {talk_id: 3}) }>
+        navigation.navigate('Dialogues3') }>
         <Image 
           style={StyleDia.img}
           source={require('../../images/ImgDialogo/nature2.png')}
@@ -38,7 +38,7 @@ export default function Vocabulario({navigation}) {
         <Text style={StyleDia.textoBotao}>Where are you?</Text>
       </TouchableOpacity>
       <TouchableOpacity style={StyleDia.botao} onPress={() => 
-        navigation.navigate('talkSelect', {talk_id: 4}) }>
+        navigation.navigate('Dialogues4') }>
         <Image 
           style={StyleDia.img}
           source={require('../../images/ImgDialogo/ifood.png')}

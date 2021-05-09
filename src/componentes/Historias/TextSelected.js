@@ -37,8 +37,8 @@ export default function TextSelected({ route, navigation }) {
    async function startAudio(){
       await TrackPlayer.setupPlayer();
       await TrackPlayer.add({
-          url: require('../../audios/Historias/saraWentShopping.mp3'),
-          artwork: require('../../images/ImgHistorias/sara.png'),
+          url: historia.audio,
+          artwork: historia.img,
           title: historia.titulo
       });
   

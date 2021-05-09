@@ -13,7 +13,7 @@ export const  SaraWentShopping =
 export const ManInjuredatFastFoodPlace =
 {
     'titulo'   : 'Man Injured at Fast Food Place',
-    'audio' : require('../../audios/Historias/saraWentShopping.mp3'),
+    'audio' : require('../../audios/Historias/manInjuredAtFastFoodPlace.mp3'),
     'img' : require('../../images/ImgHistorias/fastfood.png'),
     'conteudo' : `A 79-year-old man was slightly injured on Saturday while waiting in his brand new convertible in a drive-through lane at Burger Prince restaurant. Herman Sherman of Northville suffered a mild burn about 9:00 p.m. when a young female employee accidentally spilled a cup of coffee into his lap. Sherman said the coffee was hot but not scalding.
     He refused medical aid, saying the only problem was the stain on his slacks, but it would wash out. He was given a fresh refill. Before Sherman drove off, the restaurant manager, John Johnson, gave him two free gift certificates--one for an extra-large coffee and one for the restaurant's newest sandwich, the McRap.
@@ -25,7 +25,7 @@ export const ManInjuredatFastFoodPlace =
 export const JerryDecidedToBuyaGun =
 {
     'titulo' : 'Jerry Decided To Buy a Gun' ,
-    'audio' : require('../../audios/Historias/saraWentShopping.mp3'),
+    'audio' : require('../../audios/Historias/jerryDecideToBuyAGun.mp3'),
     'img' : require('../../images/ImgHistorias/cowboy.png'),
     'conteudo': `Jerry Baldwin was 30 years old. He was the manager of a pizza restaurant. He lived in an apartment about one mile north of the restaurant. He walked to and from work. When it was raining, he took the bus.
     Jerry loved gangster movies. When a new one came out, he would go to the theater and watch the new movie three or four times. Then, when it went to video, Jerry would buy the video at Barney’s Video Store. Jerry had a home collection of over 1,000 gangster videos. Old ones, new ones, color, black and white, English, Spanish, Japanese--he loved them all. He could tell you the name of the movie, the director, the stars, and the plot. Did you say you liked “Pulp Fiction”? Well, Jerry would rattle off all the details of that movie. And then he would invite you to his place to watch it some time. He was a nice guy.
@@ -37,7 +37,7 @@ export const JerryDecidedToBuyaGun =
 export const EatYourVegetables =
 {
     'titulo' : 'Eat Your Vegetables',
-    'audio' : require('../../audios/Historias/saraWentShopping.mp3'),
+    'audio' : require('../../audios/Historias/eatYourVegetables.mp3'),
     'img' : require('../../images/ImgHistorias/vegetable.png'),
     'conteudo': `The federal government, displaying even less sense than usual, has yielded to the French fry industry. Frozen French fries—sliced, fried in oil, and then packaged—are now approved as "fresh vegetables" by the US Department of Agriculture.
     The French fry industry has been petitioning the USDA for years to get this approval. They say that their product is similar to cucumbers that have a wax coating. They argue that they use 100 percent vegetable oil, which is much healthier for consumers than plain wax.

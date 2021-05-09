@@ -4,6 +4,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import Styles from '../../styles';
 import StylesH from '../../styles/StylesH';
 import * as Historias from './BaseTextos';
+import TrackPlayer from 'react-native-track-player';
 
 
 const Paragrafo = ({ texto }) => (
@@ -33,12 +34,40 @@ export default function TextSelected({ route, navigation }) {
 
   },[]);
 
+   async function startAudio(){
+      await TrackPlayer.setupPlayer();
+      await TrackPlayer.add({
+          url: require('../../audios/Historias/saraWentShopping.mp3'),
+          artwork: require('../../images/ImgHistorias/sara.png'),
+          title: historia.titulo
+      });
+  
+      // Start playing it
+      await TrackPlayer.play();
+  }
+
  return (
   <View style={Styles.container}>   
   {
     loading ? (<ActivityIndicator color="#2AC19C" size={45}  />) :
     (
+
       <ScrollView>
+        <View style={{flex:1, flexDirection:'row-reverse' ,alignItems:'flex-end', margin: 5}}>
+        <TouchableOpacity onPress={() => TrackPlayer.stop()}>
+            <Image 
+              style={{width:42, height:42}}
+              source={require('../../images/ImgHistorias/btn_stop.png')}
+              
+            />
+          </TouchableOpacity>
+          <TouchableOpacity  onPress={() => startAudio()}>
+          <Image 
+            style={{width:45, height:45}}
+            source={require('../../images/ImgHistorias/btn_play.png')}
+          />
+          </TouchableOpacity> 
+        </View>      
       <View style={StylesH.viewtxTitulo}>
         <Text style={StylesH.txtTitulo}>{historia?.titulo}</Text>
       </View>

@@ -1,26 +1,36 @@
 import React, {useState, useEffect} from 'react';
 import { View, Text, ScrollView, ActivityIndicator, Image } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import firebase from '../../firebaseConnection';
 import Styles from '../../styles';
 import StylesH from '../../styles/StylesH';
+import * as Historias from './BaseTextos';
+
+
+const Paragrafo = ({ texto }) => (
+  <Text>{texto}</Text>
+);
 
 export default function TextSelected({ route, navigation }) {
-  const [titulo, setTitulo] = useState('');
-  const [conteudo, setConteudo] = useState('');
-  //temporario
+  const [historia, setHistoria] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-     async function getNome() {
-       await firebase.database().ref('historias').child(route.params.historia_id).once('value', (snapshot) =>{
-         setTitulo(snapshot.val().titulo)
-         setConteudo(snapshot.val().conteudo)
-       });
-       setLoading(false);
-     }
+  useEffect(() => {   
+      switch(route.params.historia_id) {
+        case 1:
+          setHistoria(Historias.SaraWentShopping)
+          break;
+        case 2:
+          setHistoria(Historias.ManInjuredatFastFoodPlace)
+          break;
+        case 3: 
+          setHistoria(Historias.JerryDecidedToBuyaGun)
+          break;
+        case 4:
+          setHistoria(Historias.EatYourVegetables)
+          break;
+      }
+    setLoading(false);
 
-    getNome();
   },[]);
 
  return (
@@ -30,13 +40,13 @@ export default function TextSelected({ route, navigation }) {
     (
       <ScrollView>
       <View style={StylesH.viewtxTitulo}>
-        <Text style={StylesH.txtTitulo}>{titulo}</Text>
+        <Text style={StylesH.txtTitulo}>{historia?.titulo}</Text>
       </View>
       <View style={StylesH.viewConteudo}>
-        <Text style={StylesH.txtConteudo}>{conteudo}</Text>
+        <Text style={[StylesH.txtConteudo, {margin:5}]}>{historia?.conteudo}</Text>
       </View>  
       <View style={StylesH.viwBtn}>
-        <TouchableOpacity style={StylesH.btnQuestions} onPress={() => navigation.navigate('Questions')}>
+        <TouchableOpacity style={StylesH.btnQuestions} onPress={() => navigation.navigate('Questions', {historia_id: route.params.historia_id})}>
           <Text style={StylesH.txtbtnQuestions}>Exercises</Text>
           <Image 
           style={[StylesH.imgBtnText]}
@@ -47,7 +57,6 @@ export default function TextSelected({ route, navigation }) {
     </ScrollView>  
     )
   }
-
   </View>
   );
 }

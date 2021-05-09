@@ -1,50 +1,59 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, ActivityIndicator } from 'react-native';
 import styles ,{StylesH} from '../../styles/';
 import RadioButtonRN from 'radio-buttons-react-native';
+import { FlatList } from 'react-native-gesture-handler';
+import * as Perguntas from './BasePerguntas';
 
 
-const data = [
-  {
-    label: 'a mother of two',
-    correta: false
-   },
-   {
-    label: 'a wife',
-    correta: false
-    
-   },
-   {
-    label: 'a single mother',
-    correta: false
-   },
-   {
-    label: 'a mother of two and a wife',
-    correta: true
-   },
-  ];
+const Exercicios = ({enunciado, alternativas}) => (
+  <View>
+    <View>
+      <Text>{enunciado}</Text>
+    </View>
+    <RadioButtonRN 
+      data={alternativas}
+      selectedBtn={(e) => console.log(e)}
+    />
+  </View>
+);
 
-function checarReposta(e){
-  if(e.correta){
-    alert('Resposa correta!!')
-  }else {
-    alert('Resposta incorreta..')
-  }
-}
 
-export default function Questions({ navigation }) {
+export default function Questions({ route, navigation }) {
+  const [perguntas, setPerguntas] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    switch(route.params.historia_id) {
+      case 1:
+        setPerguntas(Perguntas.SaraWentShopping)
+        break;
+      case 2:
+        setPerguntas(Perguntas.ManInjuredatFastFoodPlace)
+        break;
+      case 3: 
+        setPerguntas(Perguntas.JerryDecidedToBuyaGun)
+        break;
+      case 4:
+        setPerguntas(Perguntas.EatYourVegetables)
+        break;
+    }
+    setLoading(false)
+  },[]);
+
  return (
    <View style={styles.container}>
-     <View style={{alignItems:'center'}}>
-      <Text style={{fontSize:25, fontWeight:'bold', marginTop:10, color:'#1ABAA2'}}>Sara Smith is ....? (Teste)</Text>
-     </View>
-    <RadioButtonRN 
-        style={{margin:8}}
-        data={data}
-        selectedBtn={(e) => checarReposta(e)}
-
-      />
-
+     {
+       loading ? (<ActivityIndicator color="#2AC19C" size={45}  />) :
+       (
+        <FlatList 
+        data={perguntas}
+        keyExtractor = {item => item.id}
+        renderItem = { ({ item }) => <Exercicios enunciado={item.enunciado} alternativas={item.alternativas} />  }
+       
+        /> 
+       )
+     }
    </View>
   );
 }

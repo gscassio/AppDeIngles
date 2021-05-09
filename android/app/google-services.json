@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "577347201242",
+    "firebase_url": "https://appdeingles-26c62-default-rtdb.firebaseio.com",
+    "project_id": "appdeingles-26c62",
+    "storage_bucket": "appdeingles-26c62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577347201242:android:71f18c3d14626a4da6dde3",
+        "android_client_info": {
+          "package_name": "com.appdeingles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577347201242-n8esuh3ges07f02d51uf61to10qjrdmr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appdeingles",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "577347201242-09eq7d3iokiqrv43odnsmimbq1hf6qki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBru5GGkiy_lhQJPLBaB3yodHmBwcXueQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577347201242-09eq7d3iokiqrv43odnsmimbq1hf6qki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,6 +15,7 @@ import Dialogues2 from './src/componentes/Dialogo/Dialogues2';
 import Dialogues3 from './src/componentes/Dialogo/Dialogues3';
 import Dialogues4 from './src/componentes/Dialogo/Dialogues4';
 
+
 const Abas  = createBottomTabNavigator();
 const Stack = createStackNavigator();
 

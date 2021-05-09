@@ -36,14 +36,16 @@ function Tabs(){
         screenOptions = {({route}) => ({
           tabBarIcon: ({color, size}) => {
             const { name } = icons[route.name];
-            return <FontAwesome name={name} color={color} size={size} />
+            return <FontAwesome name={name} color={color} size={27} />
           }
         }) }
         tabBarOptions={{
           style:{
-            backgroundColor: '#121212'
+            backgroundColor: '#E2E7F3',
+            paddingBottom: 5
           },
-          activeTintColor: '#fff'
+          activeTintColor: '#1D87F8',
+          inactiveTintColor: '#828AAF'
         }}
       >
       <Abas.Screen name="Vocabulario" component={Vocabulario} />

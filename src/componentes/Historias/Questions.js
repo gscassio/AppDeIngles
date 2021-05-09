@@ -44,7 +44,7 @@ export default function Questions({ route, navigation }) {
  return (
    <View style={styles.container}>
      {
-       loading ? (<ActivityIndicator color="#2AC19C" size={45}  />) :
+       loading ? (<View style={{ justifyContent:'center', marginTop:200 }}><ActivityIndicator color="#2AC19C" size={45}  /></View>) :
        (
         <FlatList 
         data={perguntas}

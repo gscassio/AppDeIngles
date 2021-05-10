@@ -85,7 +85,23 @@ export default StyleSheet.create({
         height: 25,
         marginLeft: 10,
         marginTop:15,
-    }
+    },
+    viewTituloQuestoes: {
+        paddingBottom: 35,
+        paddingTop: 10
+    },
+    textTituloQuestoes: {
+        fontSize: 20,
+        paddingLeft:10,
+        color: '#1ABAA2',
+        fontWeight: 'bold',       
+    },
+    radioQuestoes: {
+        borderRadius: 10,
+        paddingLeft: 10,
+        paddingRight: 10
+
+    },
 
 
 });

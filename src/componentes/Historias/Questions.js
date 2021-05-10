@@ -1,18 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, ActivityIndicator } from 'react-native';
-import styles ,{StylesH} from '../../styles/';
+import styles  from '../../styles/';
+import StylesH from '../../styles/StylesH';
 import RadioButtonRN from 'radio-buttons-react-native';
 import { FlatList } from 'react-native-gesture-handler';
 import * as Perguntas from './BasePerguntas';
-
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Exercicios = ({enunciado, alternativas}) => (
-  <View>
+  <View style={StylesH.viewTituloQuestoes}>
     <View>
-      <Text>{enunciado}</Text>
+      <Text style={StylesH.textTituloQuestoes}>{enunciado}</Text>
     </View>
     <RadioButtonRN 
+      style={StylesH.radioQuestoes}
       data={alternativas}
+      animationTypes= {["zoomIn"]}
+      icon={
+        <Icon
+          name="check-circle"
+          size={25}
+          color="#499CF4"
+        />
+      }
       selectedBtn={(e) => console.log(e)}
     />
   </View>

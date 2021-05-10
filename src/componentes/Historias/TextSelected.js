@@ -49,7 +49,7 @@ export default function TextSelected({ route, navigation }) {
  return (
   <View style={Styles.container}>   
   {
-    loading ? (<ActivityIndicator color="#2AC19C" size={45}  />) :
+    loading ? (<View style={{ justifyContent:'center', marginTop:200 }}><ActivityIndicator color="#2AC19C" size={45}  /></View>) :
     (
 
       <ScrollView>

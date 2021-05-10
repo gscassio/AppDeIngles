@@ -2,7 +2,7 @@
 export const SaraWentShopping = [
     {
       id: '1',
-      enunciado: 'Sara Smith is __________.',
+      enunciado: 'Sara Smith is ?',
       alternativas: [
         {
           label: 'a mother of two'
@@ -21,7 +21,7 @@ export const SaraWentShopping = [
     },
     {
       id: '2',
-      enunciado: 'A toaster is something for __________.',
+      enunciado: 'A toaster is something for ?',
       alternativas: [
         {
           label: 'holding water'
@@ -101,7 +101,7 @@ export const SaraWentShopping = [
   export const ManInjuredatFastFoodPlace = [
     {
       id: '1',
-      enunciado: '"Herman Sherman of Northville suffered a mild burn" means ____________.',
+      enunciado: '"Herman Sherman of Northville suffered a mild burn" means?',
       alternativas: [
         {
           label: 'It was really painful to the man'
@@ -373,7 +373,7 @@ export const SaraWentShopping = [
     },
     {
       id: '5',
-      enunciado: 'Most consumers ______________________.',
+      enunciado: 'Most consumers _________?',
       alternativas: [
         {
           label: 'do not like the USDA\'s decision.'

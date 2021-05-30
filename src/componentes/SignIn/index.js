@@ -34,19 +34,20 @@ export default function SignIn() {
         onChangeText={(texto) => setSenha(texto) }
         value={senha}
         placeholder="Senha"
+        secureTextEntry={true} 
        
       />
       <TouchableOpacity style={styles.btnAcesso} onPress={handleSignIn} >
           <Text style={styles.txtAcesso}>Acessar</Text>
       </TouchableOpacity>
 
-     <TouchableOpacity style={styles.btnGoogle}>
+     {/* <TouchableOpacity style={styles.btnGoogle}>
         <Image
             style={styles.imgGoole}
             source={require('../../images/google.png')}
         />
         <Text style={styles.txtGoogle}>Acessar com google</Text>
-      </TouchableOpacity>  
+      </TouchableOpacity>   */}
       <View>
          <TouchableOpacity 
          style={styles.btnCriarConta}

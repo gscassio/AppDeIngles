@@ -41,6 +41,7 @@ export default function SignUp() {
    onChangeText={(texto) => setSenha(texto) }
    value={senha}
    placeholder="Senha"
+   secureTextEntry={true} 
   
  />
  <TouchableOpacity style={styles.btnCadastro} onPress={handleSignUp}>

@@ -11,28 +11,28 @@ export default function vocabulario({navigation}) {
         <Text style={ StyleN.titulo} >Vocabulary</Text> 
      </View>
      <View style={ StyleN.menu}>
-      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('TextSelected', {vocabulario_id: 1}) } >
+      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('VocabularySelected', {vocabulario_id: 1}) } >
         <Image 
           style={ StyleN.img}
           source={require('../../images/ImgVocabulario/Animals.png')}
         />
         <Text style={ StyleN.textoBotao}>Animals</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('TextSelected', {vocabulario_id: 2}) }>
+      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('VocabularySelected', {vocabulario_id: 2}) }>
         <Image 
           style={ StyleN.img}
           source={require('../../images/ImgVocabulario/Number.png')}
         />
         <Text style={ StyleN.textoBotao}>Number</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('TextSelected', {vocabulario_id: 3}) }>
+      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('VocabularySelected', {vocabulario_id: 3}) }>
         <Image 
           style={ StyleN.img}
           source={require('../../images/ImgVocabulario/Foods.png')}
         />
         <Text style={ StyleN.textoBotao}>Foods</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('TextSelected', {vocabulario_id: 4}) }>
+      <TouchableOpacity style={ StyleN.botao} onPress={() => navigation.navigate('VocabularySelected', {vocabulario_id: 4}) }>
         <Image 
           style={ StyleN.img}
           source={require('../../images/ImgVocabulario/Objects.png')}

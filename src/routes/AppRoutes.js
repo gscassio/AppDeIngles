@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -8,6 +7,7 @@ import Dialogo from '../componentes/Dialogo';
 import Perfil from '../componentes/Perfil';
 import Historias from '../componentes/Historias';
 import TextSelected from '../componentes/Historias/TextSelected';
+import VocabularySelected from '../componentes/Vocabulario/VocabularySelected';
 import Questions from '../componentes/Historias/Questions';
 import Dialogues1 from '../componentes/Dialogo/Dialogues1';
 import Dialogues2 from '../componentes/Dialogo/Dialogues2';
@@ -64,6 +64,7 @@ export default function AppRoutes(){
       <Stack.Navigator>
         <Stack.Screen name="Vocabulario" component={Tabs} options={{ headerShown: false }} />
         <Stack.Screen name="TextSelected" component={TextSelected} options={{title:'Short English stories' }} />
+        <Stack.Screen name="VocabularySelected" component={VocabularySelected} options={{title:'Vocabulary' }} />
         <Stack.Screen name="Questions" component={Questions} options={{title:'Short English stories'}} />
         <Stack.Screen name="Dialogues1" component={Dialogues1} />
         <Stack.Screen name="Dialogues2" component={Dialogues2} />

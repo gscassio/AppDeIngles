@@ -2,16 +2,18 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 
-var firebaseConfig = {
-    apiKey: "AIzaSyDt3YVGUsRPCHadJuGb45O5ENmh8PFf--U",
-    authDomain: "appdeingles-26c62.firebaseapp.com",
-    projectId: "appdeingles-26c62",
-    storageBucket: "appdeingles-26c62.appspot.com",
-    messagingSenderId: "577347201242",
-    appId: "1:577347201242:web:662fc780fe007e72a6dde3",
-    measurementId: "G-GR1GR5GGH9"
+ var firebaseConfig = {
+    apiKey: "AIzaSyC4i1SGMGWjsWM_AV12KIAHlQeTsZK3c38",
+    authDomain: "zett-2d69f.firebaseapp.com",
+    projectId: "zett-2d69f",
+    storageBucket: "zett-2d69f.appspot.com",
+    messagingSenderId: "669474853864",
+    appId: "1:669474853864:web:98753e3bf298c11de44a5d",
+    measurementId: "G-CKQLVPDYVS"
   };
   
+
+
   if(!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);  
   }

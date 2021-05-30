@@ -36,7 +36,7 @@ export default function SignIn() {
         placeholder="Senha"
        
       />
-      <TouchableOpacity style={styles.btnAcesso}>
+      <TouchableOpacity style={styles.btnAcesso} onPress={handleSignIn} >
           <Text style={styles.txtAcesso}>Acessar</Text>
       </TouchableOpacity>
 

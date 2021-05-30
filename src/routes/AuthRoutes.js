@@ -16,14 +16,7 @@ function AuthRoutes(){
             name="SignUp" 
             component={SignUp} 
             options={{
-               headerStyle: {
-                   backgroundColor: '#131313',
-                   borderBottomWidth: 1,
-                   borderBottomColor: '#00b94a',
-               },
-               headerTintColor: '#fff',
-               headerBackTitleVisible: false,
-               headerTitle:'Voltar'
+               headerTitle:'Cadastro'
             }} />
         </AuthStack.Navigator>
     

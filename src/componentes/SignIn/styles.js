@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     logo:{
         marginTop: 5,
-        marginBottom:15,
+        marginBottom:25,
         height: 130,
         width: 130,
     },
@@ -30,6 +30,7 @@ export default StyleSheet.create({
         elevation: 4,
         borderRadius: 7,
         borderWidth: .7,
+        marginTop: 15,
        
     },
     txtAcesso:{

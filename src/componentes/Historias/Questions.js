@@ -7,7 +7,7 @@ import { FlatList } from 'react-native-gesture-handler';
 import * as Perguntas from './BasePerguntas';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-const Exercicios = ({enunciado, alternativas}) => (
+const Exercicios = ({enunciado, alternativas, resposta}) => (
   <View style={StylesH.viewTituloQuestoes}>
     <View>
       <Text style={StylesH.textTituloQuestoes}>{enunciado}</Text>
@@ -23,10 +23,21 @@ const Exercicios = ({enunciado, alternativas}) => (
           color="#499CF4"
         />
       }
-      selectedBtn={(e) => console.log(e)}
+      selectedBtn={(e) => conferirResposta(e.label, resposta)}
     />
   </View>
 );
+
+
+ function conferirResposta(respEscolhida, respCorreta){
+
+    if(respEscolhida == respCorreta) {
+      alert('Correto!')
+    } else {
+      alert('Alternativa Incorreta')
+    }
+ }
+
 
 
 export default function Questions({ route, navigation }) {
@@ -59,7 +70,7 @@ export default function Questions({ route, navigation }) {
         <FlatList 
         data={perguntas}
         keyExtractor = {item => item.id}
-        renderItem = { ({ item }) => <Exercicios enunciado={item.enunciado} alternativas={item.alternativas} />  }
+        renderItem = { ({ item }) => <Exercicios enunciado={item.enunciado} alternativas={item.alternativas} resposta={item.resposta} />  }
        
         /> 
        )

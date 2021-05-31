@@ -217,5 +217,78 @@ export  const foods= [
     },
     
 ];
+export  const objects = [
+    {
+        id: '1',
+        audio: require('../../audios/Vocabulario/objects/Computer.m4a') ,
+        palavra: 'One',
+        pronuncia: `/kəmˈpjuː.t̬ɚ/` ,
+        img: require('../../images/ImgVocabulario/objects/Computer.png'),
+    },
+    {
+        id: '2',
+        audio: require('../../audios/Vocabulario/objects/Chair.m4a') ,
+        palavra: 'Chair',
+        pronuncia: `/tʃer/` ,
+        img: require('../../images/ImgVocabulario/objects/Chair.jpg'),
+    },
+    {
+        id: '3',
+        audio: require('../../audios/Vocabulario/objects/Doll.m4a') ,
+        palavra: 'Doll',
+        pronuncia: `/dɑːl/` ,
+        img: require('../../images/ImgVocabulario/objects/Doll.jpg'),
+    },
+    {
+        id: '4',
+        audio: require('../../audios/Vocabulario/objects/Pan.m4a') ,
+        palavra: 'Pan',
+        pronuncia: `/Pan/` ,
+        img: require('../../images/ImgVocabulario/objects/Pan.jpg'),
+    },
+    {
+        id: '5',
+        audio: require('../../audios/Vocabulario/objects/Pen.m4a') ,
+        palavra: 'Pen',
+        pronuncia: `/Pen/` ,
+        img: require('../../images/ImgVocabulario/objects/Pen.jpg'),
+    },
+    {
+        id: '6',
+        audio: require('../../audios/Vocabulario/objects/Sofa.m4a') ,
+        palavra: 'Sofa',
+        pronuncia: `/ˈsoʊ.fə/` ,
+        img: require('../../images/ImgVocabulario/objects/Sofa.jpg'),
+    },
+    {
+        id: '7',
+        audio: require('../../audios/Vocabulario/objects/Bed.m4a') ,
+        palavra: 'Bed',
+        pronuncia: `/ˈbed/` ,
+        img: require('../../images/ImgVocabulario/objects/Bed.jpg'),
+    },
+    {
+        id: '8',
+        audio: require('../../audios/Vocabulario/objects/Table.m4a') ,
+        palavra: 'Table',
+        pronuncia: `/teɪ.bəl/` ,
+        img: require('../../images/ImgVocabulario/objects/Table.jpg'),
+    },
+    {
+        id: '9',
+        audio: require('../../audios/Vocabulario/objects/Television.m4a') ,
+        palavra: 'Television',
+        pronuncia: `/ˈtel.ə.vɪʒ.ən/`,
+        img: require('../../images/ImgVocabulario/objects/Television.jpg'),
+    },
+    {
+        id: '10',
+        audio: require('../../audios/Vocabulario/objects/Ball.m4a') ,
+        palavra: 'Ball',
+        pronuncia: `/bɑːl/`,
+        img: require('../../images/ImgVocabulario/objects/Ball.png'),
+    },
+    
+];
 
 //fazer o mesmo com o restante...o ID sempre vai ser de 1 a 10

@@ -21,9 +21,9 @@ export default StyleSheet.create({
       
     },
     word:{
-        marginLeft: 16,
-        marginTop: 32,
-        fontSize: 52,
+        marginLeft: 8,
+        marginTop: 53,
+        fontSize: 31,
         fontWeight: '700',
         color: '#1ABAA2',
         fontStyle: 'italic'
@@ -33,7 +33,7 @@ export default StyleSheet.create({
         marginLeft: -15,
         marginTop: 20,
         paddingTop: 48,
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: 'bold',
         color: '#828AAF',
        

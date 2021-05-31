@@ -221,7 +221,7 @@ export  const objects = [
     {
         id: '1',
         audio: require('../../audios/Vocabulario/objects/Computer.m4a') ,
-        palavra: 'One',
+        palavra: 'Computer',
         pronuncia: `/kəmˈpjuː.t̬ɚ/` ,
         img: require('../../images/ImgVocabulario/Objects/computer.png'),
     },

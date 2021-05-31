@@ -71,5 +71,78 @@ export  const numbers = [
     },
     
 ];
+export  const animals = [
+    {
+        id: '1',
+        audio: require('../../audios/Vocabulario/animals/monkey.mp4') ,
+        palavra: 'Monkey',
+        pronuncia: `/mʌŋ.ki/` ,
+        img: require('../../images/ImgVocabulario/animals/monkey.jpg'),
+    },
+    {
+        id: '2',
+        audio: require('../../audios/Vocabulario/animals/horse.mp4') ,
+        palavra: 'Horse',
+        pronuncia: `/horse/` ,
+        img: require('../../images/ImgVocabulario/animals/horse.jpg'),
+    },
+    {
+        id: '3',
+        audio: require('../../audios/Vocabulario/animals/lion.mp4') ,
+        palavra: 'Lion',
+        pronuncia: `/laɪ.ən/` ,
+        img: require('../../images/ImgVocabulario/animals/lion.jpg'),
+    },
+    {
+        id: '4',
+        audio: require('../../audios/Vocabulario/animals/fish.mp4') ,
+        palavra: 'Fish',
+        pronuncia: `/fɪʃ/` ,
+        img: require('../../images/ImgVocabulario/animals/fish.jpg'),
+    },
+    {
+        id: '5',
+        audio: require('../../audios/Vocabulario/animals/jaguar.mp4') ,
+        palavra: 'Jaguar',
+        pronuncia: `/dʒæɡ.wɑːr/` ,
+        img: require('../../images/ImgVocabulario/animals/jaguar.jpg'),
+    },
+    {
+        id: '6',
+        audio: require('../../audios/Vocabulario/animals/hen.mp4') ,
+        palavra: 'Hen',
+        pronuncia: `/hen/` ,
+        img: require('../../images/ImgVocabulario/animals/hen.png'),
+    },
+    {
+        id: '7',
+        audio: require('../../audios/Vocabulario/animals/bird.mp4') ,
+        palavra: 'Bird',
+        pronuncia: `/ˈbɝːd/` ,
+        img: require('../../images/ImgVocabulario/animals/bird.jpg'),
+    },
+    {
+        id: '8',
+        audio: require('../../audios/Vocabulario/animals/cat.mp4') ,
+        palavra: 'Cat',
+        pronuncia: `/kæt/` ,
+        img: require('../../images/ImgVocabulario/animals/cat.jpg'),
+    },
+    {
+        id: '9',
+        audio: require('../../audios/Vocabulario/animals/dog.mp4') ,
+        palavra: 'Dog',
+        pronuncia: `/dɑːɡ/`,
+        img: require('../../images/ImgVocabulario/animals/dog.jpg'),
+    },
+    {
+        id: '10',
+        audio: require('../../audios/Vocabulario/animals/zebra.mp4') ,
+        palavra: 'Zebra',
+        pronuncia: `/ziː.brə/`,
+        img: require('../../images/ImgVocabulario/animals/zebra.png'),
+    },
+    
+]
 
 //fazer o mesmo com o restante...o ID sempre vai ser de 1 a 10

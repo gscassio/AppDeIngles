@@ -143,6 +143,79 @@ export  const animals = [
         img: require('../../images/ImgVocabulario/animals/zebra.png'),
     },
     
-]
+];
+export  const foods= [
+    {
+        id: '1',
+        audio: require('../../audios/Vocabulario/foods/Apple.mp4') ,
+        palavra: 'Apple',
+        pronuncia: `/æp.ə/` ,
+        img: require('../../images/ImgVocabulario/foods/Apple.png'),
+    },
+    {
+        id: '2',
+        audio: require('../../audios/Vocabulario/foods/Cake.mp4') ,
+        palavra: 'Cake',
+        pronuncia: `/keɪk/` ,
+        img: require('../../images/ImgVocabulario/foods/Cake.jpg'),
+    },
+    {
+        id: '3',
+        audio: require('../../audios/Vocabulario/foods/Bread.mp4') ,
+        palavra: 'Bread',
+        pronuncia: `/bred/` ,
+        img: require('../../images/ImgVocabulario/foods/Bread.jpg'),
+    },
+    {
+        id: '4',
+        audio: require('../../audios/Vocabulario/foods/Coffee.mp4') ,
+        palavra: 'Coffee',
+        pronuncia: `/kɑː.fi/` ,
+        img: require('../../images/ImgVocabulario/foods/Coffee.png'),
+    },
+    {
+        id: '5',
+        audio: require('../../audios/Vocabulario/foods/Hamburger.mp4') ,
+        palavra: 'Hamburger',
+        pronuncia: `/ˈhæmˌbɝː.ɡɚ/` ,
+        img: require('../../images/ImgVocabulario/foods/Hamburger.png'),
+    },
+    {
+        id: '6',
+        audio: require('../../audios/Vocabulario/foods/Chocolate.mp4') ,
+        palavra: 'Chocolate',
+        pronuncia: `/tʃɑːk.lə/` ,
+        img: require('../../images/ImgVocabulario/foods/Chocolate.png'),
+    },
+    {
+        id: '7',
+        audio: require('../../audios/Vocabulario/foods/Candy.mp4') ,
+        palavra: 'Candy',
+        pronuncia: `/ˈkæn.d/` ,
+        img: require('../../images/ImgVocabulario/foods/Candy.jpg'),
+    },
+    {
+        id: '8',
+        audio: require('../../audios/Vocabulario/foods/Orange.mp4') ,
+        palavra: 'Orange',
+        pronuncia: `/ɔːr.ɪndʒ/` ,
+        img: require('../../images/ImgVocabulario/foods/Orange.jpg'),
+    },
+    {
+        id: '9',
+        audio: require('../../audios/Vocabulario/foods/Soda.mp4') ,
+        palavra: 'Soda',
+        pronuncia: `/ˈsoʊ.də/`,
+        img: require('../../images/ImgVocabulario/foods/Soda.jpg'),
+    },
+    {
+        id: '10',
+        audio: require('../../audios/Vocabulario/foods/Spaghetti.mp4') ,
+        palavra: 'Spaghetti',
+        pronuncia: `/spəˈɡet̬.i/`,
+        img: require('../../images/ImgVocabulario/foods/Spaghetti.jpg'),
+    },
+    
+];
 
 //fazer o mesmo com o restante...o ID sempre vai ser de 1 a 10

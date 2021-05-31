@@ -66,10 +66,10 @@ export default function AppRoutes(){
         <Stack.Screen name="TextSelected" component={TextSelected} options={{title:'Short English stories' }} />
         <Stack.Screen name="VocabularySelected" component={VocabularySelected} options={{title:'Vocabulary' }} />
         <Stack.Screen name="Questions" component={Questions} options={{title:'Short English stories'}} />
-        <Stack.Screen name="Dialogues1" component={Dialogues1} />
-        <Stack.Screen name="Dialogues2" component={Dialogues2} />
-        <Stack.Screen name="Dialogues3" component={Dialogues3} />
-        <Stack.Screen name="Dialogues4" component={Dialogues4} />
+        <Stack.Screen name="Dialogues1" component={Dialogues1} options={{title:'Dialogues'}} />
+        <Stack.Screen name="Dialogues2" component={Dialogues2} options={{title:'Dialogues'}} /> 
+        <Stack.Screen name="Dialogues3" component={Dialogues3} options={{title:'Dialogues'}} />
+        <Stack.Screen name="Dialogues4" component={Dialogues4} options={{title:'Dialogues'}} /> 
       </Stack.Navigator>
   );
 }

@@ -39,11 +39,12 @@ export default StyleSheet.create({
         width: 50,
         marginTop: 5,
         marginLeft: 10,
+        marginBottom:5,
     },
 
     TextoDireita:{
         flexWrap:"wrap", 
-        backgroundColor: '#DDA0DD',
+        backgroundColor: '#ffdbe0',
         height: 60,
         borderRadius: 15,
         justifyContent: 'flex-start',
@@ -52,11 +53,12 @@ export default StyleSheet.create({
         borderWidth: 1,
         elevation: 5,
         flexDirection: 'row',
+     
        
     },
     TextoEsquerda:{
         flexWrap:"wrap",
-        backgroundColor: '#87CEEB',
+        backgroundColor: '#bbf3f9',
         height: 60,
         borderRadius: 15,
         justifyContent: 'flex-end',
@@ -65,6 +67,7 @@ export default StyleSheet.create({
         borderWidth: 1,
         elevation: 5,
         flexDirection: 'row',
+        
         
       
     },
@@ -88,6 +91,7 @@ export default StyleSheet.create({
         width: 50,
         marginTop: 5,
         marginLeft: 10,
+        marginBottom:5,
     },
     ViewOposta:{
         flex: 1,

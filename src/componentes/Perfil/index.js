@@ -27,7 +27,7 @@ export default function Perfil() {
          ) :
          (
           <View style={styles.conteudo}>
-            <Text style={styles.txtNome}>{ user.nome }</Text>
+            <Text style={styles.txtNome}>{ user.nome.split(' ')[0] }</Text>
           </View> 
          )
        }    

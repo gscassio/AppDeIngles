@@ -9,6 +9,7 @@ export const AuthContext = createContext({});
 function AuthProvider({ children }){
     const [user, setUser] = useState(null);
     const [load, setLoading] = useState(true);
+    const [photo, setPhoto] = useState(true);
     const [authGoogle, setAuthGoogle] = useState(false);
 
     useEffect(() => {
@@ -18,8 +19,7 @@ function AuthProvider({ children }){
             if(storageUser) {
                 //converterndo para JSON
                 setUser(JSON.parse(storageUser));
-                setLoading(false);
-                setAuthGoogle(true);
+                setLoading(false);      
             }
 
             setLoading(false);
@@ -45,14 +45,19 @@ function AuthProvider({ children }){
                 let data = {
                     uid: uid,
                     nome: nome,
-                    email: value.user.email
+                    email: value.user.email,
+                    photo: null,
                 };
                 setUser(data);
                 storageUser(data);
               
             }).catch((error) => {
-                alert(error)
+             alert('Erro ao salvar usuário no banco de dados')
             });
+        }).catch((error) => {
+            if(error.code == 'auth/email-already-in-use'){
+                alert('Já existe um usuário cadastrado com este e-mail.')
+            }
         })
     }
 
@@ -66,13 +71,19 @@ function AuthProvider({ children }){
                     uid: uid,
                     nome: snapshot.val().nome,
                     email: value.user.email,
+                    photo: null,
                 };
                 setUser(data);
                 storageUser(data);
             })
         })
         .catch((error) => {
-                alert(error)
+                if(error.code == 'auth/user-not-found') {
+                    alert('Não foi encontrado nenhum cadastro para o  e-mail informado.')
+                }
+                if(error.code == 'auth/wrong-password') {
+                    alert('Senha incorreta.')
+                }
         });
 
     }
@@ -87,22 +98,16 @@ function AuthProvider({ children }){
 
           } catch (error) {
             if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-              // user cancelled the login flow
-              alert('user cancelled the login flow')
-              console.log(error)
+              alert('Operação cancelada pelo usuário')
+
             } else if (error.code === statusCodes.IN_PROGRESS) {
-              // operation (e.g. sign in) is in progress already
-              alert('operation (e.g. sign in) is in progress already')
-              console.log(error)
+              alert('Já existe uma operação de login em progresso.')
+
             } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-              // play services not available or outdated
-              alert('operation (e.g. sign in) is in progress already')
-              console.log(error)
+              alert('Serviço não disponivel')
+
             } else {
-              // some other error happened
-              alert('error geral')
-              console.log(error)
-              
+              alert('Ocorreu um erro, tente mais tarde.')
             }
           }
     }
@@ -119,7 +124,7 @@ function AuthProvider({ children }){
             });
            
         } catch (error) {
-            console.error(error);
+           console.error(error); 
         }
     }
 

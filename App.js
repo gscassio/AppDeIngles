@@ -7,7 +7,7 @@ import Routes from './src/routes';
 import AuthProvider from './src/contents/auth';
 
 //console.disableYellowBox=true;
-LogBox.ignoreLogs(['Warning: ...']);
+LogBox.ignoreAllLogs(true)
 
 
 export default function App() {

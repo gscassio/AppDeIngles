@@ -5,17 +5,18 @@ import styles from './styles';
 
 export default function Perfil() {
   const {user, signOut, signOutGoogle, authGoogle} = useContext(AuthContext);
+
   
  return (
    <View style={styles.container}>
-      <TouchableOpacity style={styles.btnLogout} onPress={() => authGoogle ? signOutGoogle() : signOut() }>
+      <TouchableOpacity style={styles.btnLogout} onPress={() => user.photo !== null ? signOutGoogle() : signOut() }>
        <Image
         style={styles.logout}
         source={require('../../images/logout.png')}
         />         
        </TouchableOpacity>
        {
-         authGoogle ? 
+          user.photo  !== null ? 
          (
            <View style={styles.conteudoGoogle}>
              <Image 

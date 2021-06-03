@@ -1,13 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, ActivityIndicator } from 'react-native';
+import { View, Text, ActivityIndicator, Button, TouchableOpacity } from 'react-native';
 import styles  from '../../styles/';
 import StylesH from '../../styles/StylesH';
 import RadioButtonRN from 'radio-buttons-react-native';
 import { FlatList } from 'react-native-gesture-handler';
 import * as Perguntas from './BasePerguntas';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import Modal from 'react-native-modal';
 
-const Exercicios = ({enunciado, alternativas, resposta}) => (
+const Exercicios = ({enunciado, alternativas, resposta}) => {
+  const [isModalVisible, setModalVisible] = useState(false);
+  const [textoModal, setTextoModal] = useState('');
+  const [iconeModal, setIconeModal] = useState('');
+  const [colorModal, setColorModal] = useState('');
+
+  function conferirResposta(respEscolhida, respCorreta){
+    if(respEscolhida == respCorreta) {
+      setTextoModal('Correct!!')
+      setModalVisible(true);
+      setIconeModal('check')
+      setColorModal('#499CF4')
+    } else {
+      setTextoModal('Incorrect!!')
+      setModalVisible(true);
+      setIconeModal('times')
+      setColorModal('#b30b0b')
+    }
+ }
+  
+  return (  
   <View style={StylesH.viewTituloQuestoes}>
     <View>
       <Text style={StylesH.textTituloQuestoes}>{enunciado}</Text>
@@ -25,20 +46,32 @@ const Exercicios = ({enunciado, alternativas, resposta}) => (
       }
       selectedBtn={(e) => conferirResposta(e.label, resposta)}
     />
+      <Modal 
+      isVisible={isModalVisible}
+      onBackdropPress={() => setModalVisible(false)}
+      backdropOpacity={0.15}
+      animationOutTiming={2000}
+      animationInTiming={700}
+      animationIn="slideInDown"
+      style={{justifyContent: 'center', alignItems: 'center'}}
+      >
+        <View style={{backgroundColor: '#F1F5F4', justifyContent: 'center', alignItems: 'center', marginTop: -150, margin:4, padding:8,
+      width: 250, borderRadius: 35,
+      }}>
+          <Icon
+            name={iconeModal}
+            size={70}
+            color={colorModal}
+          />
+          <Text style={{fontSize:25, fontStyle:'italic', fontWeight:'bold', color: colorModal, marginTop: -2, marginBottom:15 }}>{textoModal}</Text>
+
+          <TouchableOpacity onPress={() => setModalVisible(false)} style={{backgroundColor:"#5C636A", height:45, width:90, borderRadius: 8, alignItems: 'center', justifyContent: 'center'}}>
+            <Text style={{fontSize:22, fontWeight: 'bold', color: '#fff'}}>Close</Text>
+          </TouchableOpacity>
+        </View>
+      </Modal>
   </View>
-);
-
-
- function conferirResposta(respEscolhida, respCorreta){
-
-    if(respEscolhida == respCorreta) {
-      alert('Correto!')
-    } else {
-      alert('Alternativa Incorreta')
-    }
- }
-
-
+)};
 
 export default function Questions({ route, navigation }) {
   const [perguntas, setPerguntas] = useState(null);

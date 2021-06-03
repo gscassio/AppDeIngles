@@ -24,6 +24,21 @@ export default StyleSheet.create({
         marginTop: 10,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    imgGoogle:{
+        height: 110,
+        width: 110,
+        borderRadius: 57,
+    },
+    conteudoGoogle:{
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    txtGoogle:{
+        fontSize: 25,
+        fontWeight: 'bold',
+        color: '#1ABAA2',
+
     }
 
 });

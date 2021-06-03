@@ -7,13 +7,18 @@ import styles from './styles';
 export default function SignIn() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
-    const { signIn } = useContext(AuthContext);
+    const {signIn, signInWithGoogle } = useContext(AuthContext);
   
   
     const navigation = useNavigation();  
   
     function handleSignIn(){
       signIn(email, senha);
+    }
+
+    function handleSingInGoogle()
+    {
+      signInWithGoogle();
     }
 
  return (
@@ -41,13 +46,13 @@ export default function SignIn() {
           <Text style={styles.txtAcesso}>Acessar</Text>
       </TouchableOpacity>
 
-     {/* <TouchableOpacity style={styles.btnGoogle}>
+     <TouchableOpacity style={styles.btnGoogle} onPress={handleSingInGoogle}>
         <Image
             style={styles.imgGoole}
             source={require('../../images/google.png')}
         />
         <Text style={styles.txtGoogle}>Acessar com google</Text>
-      </TouchableOpacity>   */}
+      </TouchableOpacity>  
       <View>
          <TouchableOpacity 
          style={styles.btnCriarConta}

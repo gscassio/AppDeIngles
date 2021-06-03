@@ -1,12 +1,13 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import Routes from './src/routes';
 import AuthProvider from './src/contents/auth';
 
-console.disableYellowBox=true;
+//console.disableYellowBox=true;
+LogBox.ignoreLogs(['Warning: ...']);
 
 
 export default function App() {

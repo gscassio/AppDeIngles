@@ -1,4 +1,4 @@
-package com.appdeingles;
+package com.zett;
 
 import com.facebook.react.ReactActivity;
 

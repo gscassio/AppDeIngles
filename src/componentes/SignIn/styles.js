@@ -39,10 +39,10 @@ export default StyleSheet.create({
         fontWeight: 'bold',
 
     },
-    btnCriarConta:{
-        marginTop:4,
+    btnLinks:{
+        marginTop:5,
     },
-    txtCriarConta:{
+    txtLinks:{
         fontWeight: 'bold',
 
     },

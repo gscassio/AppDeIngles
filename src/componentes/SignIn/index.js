@@ -104,13 +104,23 @@ export default function SignIn() {
         />
         <Text style={styles.txtGoogle}>Acessar com google</Text>
       </TouchableOpacity>  
-      <View>
-         <TouchableOpacity 
-         style={styles.btnCriarConta}
-         onPress={()=> navigation.navigate('SignUp') }
-         >
-            <Text style={styles.txtCriarConta}>Criar conta</Text>
-         </TouchableOpacity>         
+      <View style={{flexDirection: 'row', justifyContent: 'space-evenly' ,width:'90%' }}>       
+        <View>
+          <TouchableOpacity 
+            style={styles.btnLinks}
+            onPress={()=> navigation.navigate('SignUp') }
+            >
+                <Text style={styles.txtLinks}>Criar conta</Text>
+          </TouchableOpacity> 
+        </View>
+        <View>
+          <TouchableOpacity 
+              style={styles.btnLinks}
+              onPress={()=> navigation.navigate('ForgotPassWord') }
+              >
+                  <Text style={styles.txtLinks}>Esqueci a senha</Text>
+            </TouchableOpacity> 
+        </View>         
      </View>   
    </View>
   );

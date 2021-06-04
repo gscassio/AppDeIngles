@@ -142,9 +142,27 @@ function AuthProvider({ children }){
 
     }
 
+    async function passwordReset(email){
+        await auth().sendPasswordResetEmail(email)
+        .then(() => {
+            alert('Acesse seu e-mail para gerar uma nova senha')
+        })
+        .catch((error) => {
+            if(error.code == 'auth/user-not-found') {
+                alert('Não há usuário cadastrado para o e-mail '+email)
+            }
+        })
+       
+   
+
+    }
+
     return(
         //!!user converter para boolean..caso tenha algum dado ficará com true, senao fica como false
-        <AuthContext.Provider value={{ signed: !!user ,user, load, authGoogle, signup, signIn, signOut, signInWithGoogle, signOutGoogle }}>
+        <AuthContext.Provider value={{ 
+            signed: !!user ,user, load, authGoogle, 
+            signup, signIn, signOut, signInWithGoogle, signOutGoogle, passwordReset
+             }}>
             {children}
         </AuthContext.Provider>
     );

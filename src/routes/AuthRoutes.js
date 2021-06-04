@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import SignIn from '../componentes/SignIn';
 import SignUp from '../componentes/SignUp';
+import ForgotPassWord from '../componentes/ForgotPassWord';
 
 import { View, Text } from 'react-native';
 
@@ -18,7 +19,14 @@ function AuthRoutes(){
             options={{
                headerTitle:'Cadastro'
             }} />
+             <AuthStack.Screen 
+            name="ForgotPassWord" 
+            component={ForgotPassWord} 
+            options={{
+               headerTitle:'Recuperação de senha'
+            }} />
         </AuthStack.Navigator>
+        
     
     );
 }

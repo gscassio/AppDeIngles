@@ -5,14 +5,13 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: '#F8F7FC',
         justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: 90,
+        alignItems: 'center'
     },
     logo:{
-        marginTop: 15,
+        marginTop: -90,
+        marginBottom:30,
         height: 110,
         width: 110,
-        marginBottom: 20,
     },
     input:{
         borderWidth: 2,
@@ -22,7 +21,7 @@ export default StyleSheet.create({
         borderRadius: 7,
         marginBottom: 10,
     },
-    btnCadastro:{
+    btnEnviar:{
         width: '90%',
         alignItems: 'center',
         justifyContent: 'center',
@@ -31,11 +30,11 @@ export default StyleSheet.create({
         elevation: 4,
         borderRadius: 7,
         borderWidth: .7,
-        marginTop: 20,
+        marginTop: 8,
     },
-    txtCadastro:{
-        fontSize: 22,
+    txtEnviar:{
         color: '#fff',
+        fontSize: 22,
         fontWeight: 'bold',
     }
 });

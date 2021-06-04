@@ -45,3 +45,39 @@ export const EatYourVegetables =
     The USDA defends its decision, saying that potatoes undeniably are vegetables. Although French fries are fried in oil, they are still potatoes. If you let them sit on your countertop for a couple of weeks, a USDA spokesman said, the fries will rot just like all other fresh vegetables.
     Consumer advocates say the USDA has totally lost touch with the consumers. "They'd probably declare that eggshells are nutritious if a lobbyist asked them to," said one advocate.`
 }
+
+export const PopularParkReopens =
+{
+    'titulo' : ' Popular Park Reopens',
+    'audio' : require('../../audios/Historias/park.mp3'),
+    'img' : require('../../images/ImgHistorias/swimmig.png'),
+    'conteudo': `The Silas Lake Park reopens today after being closed for six months. The park was closed because mud and rock slides destroyed part of Cambridge Road, the only access into the park. "We had to remove tons of boulders and rocks," said Hugh Foster of the Parks and Recreation Department. "Then we had to rebuild a bridge and reconstruct almost a mile of highway. I'm really surprised we got it done so soon."
+    The park is three miles north of Colfax on Highway 28. Cambridge Road is a two-lane highway that winds upward through Pearl Canyon before it descends to Silas Lake, which has about 20 miles of shoreline. The largest lake in the county, it is also famous for bass. In fact, the record largemouth bass catch in California occurred here in 1975. A 14-year-old boy caught a 19-pound bass.    
+    The lake has two ramps for boaters, a full-service restaurant, a snack bar, a small tackle store, and a boat rental facility. As with all county parks, no alcohol is sold or permitted. More than 100 picnic tables have protective roofs and big barbecue pits. There are public restrooms with free shower facilities, lots of trash cans, and hiking trails for nature lovers. The west side of the park includes a softball field, a soccer field, and two volleyball courts. Horseshoes and kite-flying are two other popular activities. In the summer, a designated swimming area has a lifeguard on duty seven days a week.    
+    The entry fee is $10 per vehicle and $10 per boat. Reservations are not accepted. The parking lot holds about 500 vehicles; if it is full, no additional vehicles are allowed to enter. Latecomers either leave or wait in line for someone to leave the parking lot. Some weekends there are three dozen vehicles waiting in line outside the gate. Because of many requests, park officials soon might start permitting campers to stay overnight on weekends.    
+    The park is open from dawn to 10 p.m. during the summer. "We probably average 2,000 people here every day during the summer," said Foster. "They come here to fish, swim, water-ski, jet-ski, picnic, commune with Mother Nature, you name it. People love this place."`
+}
+
+// export const EatYourVegetables =
+// {
+//     'titulo' : '',
+//     'audio' : require('../../audios/Historias/.mp3'),
+//     'img' : require('../../images/ImgHistorias/.png'),
+//     'conteudo': ``
+// }
+
+// export const EatYourVegetables =
+// {
+//     'titulo' : '',
+//     'audio' : require('../../audios/Historias/.mp3'),
+//     'img' : require('../../images/ImgHistorias/.png'),
+//     'conteudo': ``
+// }
+
+// export const EatYourVegetables =
+// {
+//     'titulo' : '',
+//     'audio' : require('../../audios/Historias/.mp3'),
+//     'img' : require('../../images/ImgHistorias/.png'),
+//     'conteudo': ``
+// }

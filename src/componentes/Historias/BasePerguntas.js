@@ -391,3 +391,101 @@ export const SaraWentShopping = [
       resposta: 'do not like the USDA\'s decision.',
     },  
   ];
+
+  export const PopularParkReopens = [
+    {
+      id: '1',
+      enunciado: 'Why was the Silas Lake Park closed?',
+      alternativas: [
+        {
+          label: 'Because the only way to the park was destroyed.'
+        },
+        {
+          label: 'Because they wanted to build a new bridge.'
+        },
+        {
+          label: 'Because Cambridge Road was too narrow.'
+        },
+        {
+          label: 'Because they wanted to beautify the access into the park.'
+        },
+      ],
+      resposta: 'Because the only way to the park was destroyed.',
+    },
+    {
+      id: '2',
+      enunciado: 'What is Silas Lake famous for?',
+      alternativas: [
+        {
+          label: 'A kind of metal'
+        },
+        {
+          label: 'A plant'
+        },
+        {
+          label: 'A kind of fish'
+        },
+        {
+          label: 'A flower'
+        },
+      ],
+      resposta: 'A kind of fish',
+    },
+    {
+      id: '3',
+      enunciado: 'What can’t you get in the park?',
+      alternativas: [
+        {
+          label: 'Shower.'
+        },
+        {
+          label: 'Barbecue pits.'
+        },
+        {
+          label: 'Snacks.'
+        },
+        {
+          label: 'Alcohol.'
+        },
+      ],
+      resposta: 'Alcohol.',
+    },
+    {
+      id: '4',
+      enunciado: 'Which of the following is true?',
+      alternativas: [
+        {
+          label: 'You have to pay to have a shower in the park.'
+        },
+        {
+          label: 'Picnic tables sit out in the open air with nothing to protect them.'
+        },
+        {
+          label: 'You can play soccer in the park if you like.'
+        },
+        {
+          label: 'You have to bring food with you when you go there.'
+        },
+      ],
+      resposta: 'You can play soccer in the park if you like.',
+    },
+    {
+      id: '5',
+      enunciado: 'Why do people love the park?',
+      alternativas: [
+        {
+          label: 'They can do many things there.'
+        },
+        {
+          label: 'They can take a walk there.'
+        },
+        {
+          label: 'Various kinds of food are offered there.'
+        },
+        {
+          label: 'They can park their cars for free.'
+        },
+      ],
+      resposta: 'They can do many things there.',
+    },  
+  ];

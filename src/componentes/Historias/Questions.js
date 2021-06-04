@@ -91,6 +91,9 @@ export default function Questions({ route, navigation }) {
       case 4:
         setPerguntas(Perguntas.EatYourVegetables)
         break;
+      case 5:
+        setPerguntas(Perguntas.PopularParkReopens)
+        break;
     }
     setLoading(false)
   },[]);

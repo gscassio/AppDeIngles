@@ -29,6 +29,9 @@ export default function TextSelected({ route, navigation }) {
         case 4:
           setHistoria(Historias.EatYourVegetables)
           break;
+          case 5:
+            setHistoria(Historias.PopularParkReopens)
+          break;
       }
     setLoading(false);
 

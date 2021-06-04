@@ -39,6 +39,13 @@ export default function Historias({navigation}) {
         />
         <Text style={StylesH.textoBotao}>Eat Your Vegetables</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={StylesH.botao} onPress={() => navigation.navigate('TextSelected', {historia_id: 5}) }>
+        <Image 
+          style={StylesH.img}
+          source={require('../../images/ImgHistorias/swimmig.png')}
+        />
+        <Text style={StylesH.textoBotao}>Eat Your Vegetables</Text>
+      </TouchableOpacity>
      </View>       
    </View>
   );

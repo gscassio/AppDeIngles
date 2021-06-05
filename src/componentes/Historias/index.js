@@ -44,7 +44,14 @@ export default function Historias({navigation}) {
           style={StylesH.img}
           source={require('../../images/ImgHistorias/swimmig.png')}
         />
-        <Text style={StylesH.textoBotao}>Eat Your Vegetables</Text>
+        <Text style={StylesH.textoBotao}>Popular Park Reopens</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={StylesH.botao} onPress={() => navigation.navigate('TextSelected', {historia_id: 6}) }>
+        <Image 
+          style={StylesH.img}
+          source={require('../../images/ImgHistorias/gasoline.png')}
+        />
+        <Text style={StylesH.textoBotao}>Gasoline Prices Hit Record High</Text>
       </TouchableOpacity>
      </View>       
    </View>

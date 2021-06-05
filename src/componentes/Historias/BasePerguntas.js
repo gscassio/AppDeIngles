@@ -489,3 +489,101 @@ export const SaraWentShopping = [
       resposta: 'They can do many things there.',
     },  
   ];
+
+  export const GasolinePricesHitRecordHigh = [
+    {
+      id: '1',
+      enunciado: 'Why is gas at Seashell cheaper than elsewhere?',
+      alternativas: [
+        {
+          label: 'Because the quality of the gas is poor.'
+        },
+        {
+          label: 'Because fewer people there need gas.'
+        },
+        {
+          label: 'Because the gas was purchased early at reduced prices.'
+        },
+        {
+          label: 'Because its refinery ignores clean air laws.'
+        },
+      ],
+      resposta: 'Because the gas was purchased early at reduced prices.',
+    },
+    {
+      id: '2',
+      enunciado: 'What was approximately the average price for 87 octane economy gas 12 months ago?',
+      alternativas: [
+        {
+          label: '$1.90'
+        },
+        {
+          label: '$1.60'
+        },
+        {
+          label: '$1.80'
+        },
+        {
+          label: '$2.00'
+        },
+      ],
+      resposta: '$1.60',
+    },
+    {
+      id: '3',
+      enunciado: 'Which of the following is not true?',
+      alternativas: [
+        {
+          label: 'There are often 10 to 20 vehicles waiting in line.'
+        },
+        {
+          label: 'The police occasionally have to go there because of traffic jams.'
+        },
+        {
+          label: 'Everett managed to persuade some people to go to the Barco station to buy gas.'
+        },
+        {
+          label: 'The price of gas at the Barco station is 5 cents higher than at the Seashell station.'
+        },
+      ],
+      resposta: 'Everett managed to persuade some people to go to the Barco station to buy gas.',
+    },
+    {
+      id: '4',
+      enunciado: 'What can be inferred from the last paragraph?',
+      alternativas: [
+        {
+          label: 'Many people stop unnecessary driving as a result of the higher gas prices.'
+        },
+        {
+          label: 'The name of his car is ’99 Bummer.'
+        },
+        {
+          label: 'A gallon of gas at one time cost only $1.'
+        },
+        {
+          label: 'The young man used to drive for fun at times.'
+        },
+      ],
+      resposta: 'Many people stop unnecessary driving as a result of the higher gas prices.',
+    },
+    {
+      id: '5',
+      enunciado: 'What’s the main idea of the passage?',
+      alternativas: [
+        {
+          label: 'People are used to the high price of gasoline.'
+        },
+        {
+          label: 'The gas price at the Seashell station is very low.'
+        },
+        {
+          label: 'Gasoline prices keep rising.'
+        },
+        {
+          label: 'Many people go to the Seashell station to buy cheap gasoline.'
+        },
+      ],
+      resposta: 'Gasoline prices keep rising.',
+    },  
+  ];

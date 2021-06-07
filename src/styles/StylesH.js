@@ -6,7 +6,8 @@ export default StyleSheet.create({
         color: '#2AC19C',
         fontWeight: 'bold',
         marginTop: 40,
-        alignItems: 'center'
+        alignItems: 'center',
+        marginBottom: 50,
     },
     cabecalho: {
         alignItems: 'center'
@@ -33,6 +34,7 @@ export default StyleSheet.create({
         borderWidth: 1,
         elevation: 5,
         flexDirection: 'row',        
+        marginBottom: 50,
     },
     img: {
         height: 50,

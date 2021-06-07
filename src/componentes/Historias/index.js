@@ -1,12 +1,11 @@
 import React from 'react';
-import { View, Text, Button, TouchableOpacity, Image } from 'react-native';
-import Styles from '../../styles';
+import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
 import StylesH from '../../styles/StylesH';
 
 
 export default function Historias({navigation}) {
  return (
-   <View style={Styles.container}>
+   <ScrollView showsVerticalScrollIndicator={false} >
      <View style={StylesH.cabecalho}>
         <Text style={StylesH.titulo} >Short English stories</Text> 
      </View>
@@ -53,7 +52,7 @@ export default function Historias({navigation}) {
         />
         <Text style={StylesH.textoBotao}>Gasoline Prices Hit Record High</Text>
       </TouchableOpacity>
-     </View>       
-   </View>
+      </View>       
+   </ScrollView>
   );
 }
